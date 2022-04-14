@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <ImageView
+        android:id="@+id/ivhamburger"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/hamburger_menu" />
+
+    <ImageView
+        android:id="@+id/ivlogo"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/favicon" />
+
+    <LinearLayout
+        android:id="@+id/lrmaumakanapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/ivhamburger"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp">
+
+        <TextView
+            android:id="@+id/tvhai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi Rangga, What do you want to eat"
+            android:textColor="@color/ungu_gelap"
+            android:fontFamily="@font/oswald_semibold"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="today?"
+            android:textColor="@color/ungu_gelap"
+            android:fontFamily="@font/oswald_semibold"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_search"
+        android:layout_below="@+id/lrmaumakanapa"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="280dp"
+        app:boxStrokeColor="@color/transparant"
+        app:boxStrokeWidth="0dp"
+        android:textColorHint="@color/ungu_gelap"
+        android:layout_height="wrap_content"
+        android:hint="Let's eat salad!!"
+        app:startIconDrawable="@drawable/search">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_corner"
+            android:textColor="@color/ungu_gelap"
+            android:fontFamily="@font/oswald_semibold"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/lrmaumakanapa"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="45dp"
+        android:layout_toRightOf="@+id/til_search"
+        android:src="@drawable/filter" />
+
+    <TextView
+        android:id="@+id/tvrecomend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/til_search"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Restaurant with the best rating"
+        android:textColor="@color/ungu_gelap"
+        android:textSize="20dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvlistrestoran"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_below="@id/tvrecomend"
+        tools:listitem="@layout/list_restaurant" />
+
+    <TextView
+        android:id="@+id/tvbestdeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best Deal"
+        android:fontFamily="@font/oswald_medium"
+        android:textColor="@color/brown"
+        android:textSize="24dp"
+        android:layout_below="@+id/rvlistrestoran"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvnear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rvlistrestoran"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/tvbestdeal"
+        android:fontFamily="@font/oswald_medium"
+        android:text="Near You"
+        android:textColor="@color/ungu_terang"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recently Opened"
+        android:textColor="@color/ungu_terang"
+        android:textSize="20dp"
+        android:fontFamily="@font/oswald_medium"
+        android:layout_below="@id/rvlistrestoran"
+        android:layout_toRightOf="@+id/tvnear"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvbestdeal"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/box_shadow"
+        android:backgroundTint="@color/bg_biru_terang"
+        android:elevation="7dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp">
+
+        <ImageView
+            android:id="@+id/ivlogobestdeal"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo_richeese" />
+
+        <TextView
+            android:id="@+id/tvnamaresto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/ivlogobestdeal"
+            android:fontFamily="@font/oswald_medium"
+            android:text="Richeese Factory Kudus Extension Mall"
+            android:textColor="@color/brown" />
+
+        <TextView
+            android:id="@+id/tvjenisharga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvnamaresto"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/ivlogobestdeal"
+            android:fontFamily="@font/oswald_regular"
+            android:text="$$$"
+            android:textColor="@color/brown"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tvdescbestdeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvnamaresto"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tvjenisharga"
+            android:fontFamily="@font/oswald_regular"
+            android:text="Cepat Saji, Ayam dan Bebek"
+            android:textColor="@color/brown"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tvjarakbestdeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvjenisharga"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/ivlogobestdeal"
+            android:fontFamily="@font/oswald_regular"
+            android:text="7.0KM"
+            android:textColor="@color/kuning"
+            android:textSize="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnlihatselengkapnya"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/tvdescbestdeal"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@id/ivlogobestdeal"
+            android:fontFamily="@font/oswald_medium"
+            android:text="Lihat Selengkapnya"
+            android:textColor="@color/brown"
+            android:textSize="10dp"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/right_arrow"
+            app:iconGravity="end"
+            app:iconSize="10dp"
+            app:iconTint="@color/brown" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

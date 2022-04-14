@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="15dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/ivrestaurant"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/paparons"/>
+
+        <TextView
+            android:id="@+id/tvjarak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.6km"
+            android:textSize="14dp"
+            android:textColor="@color/kuning"
+            android:fontFamily="@font/oswald_regular"/>
+
+            <TextView
+                android:id="@+id/tvnamarestaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paparon's Pizza"
+                android:padding="2dp"
+                android:shadowColor="@color/transparent_grey"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="1.5"
+                android:textColor="@color/brown"
+                android:fontFamily="@font/oswald_medium"
+                android:textSize="16dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/star"
+                    android:layout_marginTop="3dp"/>
+
+                <TextView
+                    android:id="@+id/tvrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.7"
+                    android:textSize="14dp"
+                    android:textColor="@color/kuning"
+                    android:fontFamily="@font/oswald_regular"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="3dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

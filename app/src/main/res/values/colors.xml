@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="et_bg">#F3F1F1</color>
+    <color name="text_hint">#C2BDBD</color>
+    <color name="brown">#342628</color>
+    <color name="kuning">#FEAA00</color>
+    <color name="desc_text">#AAAAAA</color>
+    <color name="ungu_gelap">#27214D</color>
+    <color name="transparant">#0027214D</color>
+    <color name="ungu_terang">#938DB5</color>
+    <color name="transparent_grey">#7F000000</color>
+    <color name="bg_kuning_terang">#FFE4AD</color>
+    <color name="bg_biru_terang">#EBFFF8</color>
+    <color name="text">#B8B7B7</color>
+    <color name="lightyellow">#F1B231</color>
+    <color name="icon">#86869E</color>
+    <color name="garis">#C4C4C4</color>
+    <color name="delivery">#FFE4AD</color>
+    <color name="abu">#AAAAAA</color>
+
+</resources>

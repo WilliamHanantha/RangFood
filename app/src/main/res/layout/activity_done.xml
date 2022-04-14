@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DoneActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/garis"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/centang"
+        android:layout_gravity="center"
+        android:layout_marginTop="-10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congratulations!"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/ungu_gelap"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your order has been placed."
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:textColor="@color/ungu_gelap"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enjoy your food, Buddy!"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:textColor="@color/ungu_gelap"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/kuning"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Track Order"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_back_to_menu"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/white"
+        app:strokeColor="@color/kuning"
+        app:strokeWidth="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Home"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        android:textColor="@color/brown"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textAllCaps="false"/>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/gariskebalik" />
+
+</LinearLayout>
+

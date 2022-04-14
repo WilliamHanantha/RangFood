@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".IntroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/brown">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_putih_kuning"
+            android:layout_marginTop="100dp"/>
+
+        <ImageView
+            android:layout_width="470dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/minyak" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Who do you want to be called?"
+        android:textColor="@color/ungu_gelap"
+        android:textSize="18dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/oswald_semibold"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tfnamakamu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Nickname"
+        android:textColorHint="@color/text_hint"
+        app:boxStrokeWidth="0dp"
+        android:background="@drawable/corner_transparan"
+        app:boxStrokeColor="@color/transparant"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"
+        android:paddingVertical="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etnamakamu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/et_bg"
+            android:fontFamily="@font/oswald_semibold"
+            android:textColor="@color/ungu_gelap"
+            android:textSize="20dp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnmasuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        app:cornerRadius="20dp"
+        android:backgroundTint="@color/kuning"
+        android:paddingVertical="10dp"
+        android:layout_marginHorizontal="30dp"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/oswald_light"/>
+
+</LinearLayout>
