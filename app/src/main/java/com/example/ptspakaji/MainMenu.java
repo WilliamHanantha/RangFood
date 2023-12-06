@@ -24,7 +24,7 @@ public class MainMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
 
-        Button buttonLihat = findViewById(R.id.btnlihatselengkapnya);
+        RelativeLayout buttonLihat = findViewById(R.id.btnlihatselengkapnya);
         buttonLihat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
